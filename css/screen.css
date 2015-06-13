@@ -1,0 +1,244 @@
+body, h1, h2, h3, h4, h5, h6, ul, li {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+body {
+	background-color: hsl(200, 82%, 50%);
+	background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+	font-size: 100%;
+}
+
+a {
+	color: hsl(200, 82%, 35%)
+}
+
+a:visited {
+	color: hsl(200, 82%, 25%)
+}
+
+header h1 {
+	background-color: hsla(200, 82%, 90%, .7);
+	font-size: 400%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+article header :not(:first-child) {
+	font-size: 80%;
+	font-variant: small-caps;
+}
+
+header a {
+	text-decoration: none;
+}
+
+article {
+	margin-bottom: 3em;
+}
+nav ul { 
+	list-style: none outside none;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	background: hsla(200, 82%, 65%, .7);
+	z-index=-2;
+}
+nav ul li {
+	position: relative;
+	z-index: 0;
+}
+nav ul li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:-1;
+	background: hsl(200, 82%, 90%);
+	-webkit-transform: skew(-45deg);
+	transform: skew(-45deg);
+}
+nav ul li:hover::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:-1;
+	background: hsl(200, 82%, 35%);
+}
+nav ul li a {
+	display:block;
+	text-decoration: none;
+    line-height:2em;
+	padding: 3px 20px;
+	color: hsl(200, 82%, 35%);
+	font-weight: bold;
+}
+nav ul li a:hover {
+	color: hsl(200, 82%, 90%);
+	font-weight: bold;
+}
+ div#wrapper {
+	 margin: 0 auto;
+	 max-width: 60em;
+}
+main {
+	/*float:left;
+	position:relative;
+	width:50%;
+	left:12%;*/
+	display: inline-block;
+	vertical-align: top;
+	max-width: 40em;
+	padding:2em;
+	box-sizing: border-box;
+	background: hsla(200, 82%, 90%, .8);
+	background: 
+		radial-gradient(circle at top left, transparent 1em, hsl(200, 82%, 90%) 0) top left,
+		radial-gradient(circle at top right, transparent 1em, hsl(200, 82%, 90%) 0) top right,
+		radial-gradient(circle at bottom left, transparent 1em, hsl(200, 82%, 90%) 0) bottom left,
+		radial-gradient(circle at bottom right, transparent 1em, hsl(200, 82%, 90%) 0) bottom right;
+	background-size: 51% 51%, 51% 51%;
+	background-repeat: no-repeat;
+	margin-bottom: 3em;
+}	
+aside {
+	/*float:left;
+	position:relative;
+	width:25%;
+	left:17%;*/
+	display: inline-block;
+	vertical-align: top;
+	max-width: 19em;
+	box-sizing: border-box;
+	padding:1.5em;
+	background: hsla(200, 82%, 90%, .8);
+	background: 
+		radial-gradient(circle at top left, transparent 1em, hsl(200, 82%, 90%) 0) top left,
+		radial-gradient(circle at top right, transparent 1em, hsl(200, 82%, 90%) 0) top right,
+		radial-gradient(circle at bottom left, transparent 1em, hsl(200, 82%, 90%) 0) bottom left,
+		radial-gradient(circle at bottom right, transparent 1em, hsl(200, 82%, 90%) 0) bottom right;
+	background-size: 51% 51%, 51% 51%;
+	background-repeat: no-repeat;
+}
+
+aside a {
+	text-decoration: none;
+}
+
+aside section {
+	margin-bottom: 1em;
+}
+aside section h4 {
+	font-variant: small-caps;
+}
+
+p + p {
+	text-indent:1.5em;
+	margin-top: 0.5em; 
+}
+
+main ul li {
+	padding-left:1em;
+}
+
+li h3 {
+	text-transform: capitalize;
+}
+
+li h3 a {
+	text-decoration: none;
+}
+
+a.more-link {
+	font-size:80%;
+	font-weight:bold;
+}
+
+blockquote {
+	background:#CCC;
+	border-radius:5px;
+	margin-left:2em;
+	padding:1em;
+}
+
+nav.breadcrumbs a {
+	background: linear-gradient(45deg, hsl(200, 82%, 90%) 80%, transparent 0) top, linear-gradient(-45deg, transparent 20%, hsl(200, 82%, 90%) 0) bottom;
+	background-size: 100% 51%;
+	background-repeat: no-repeat;
+	padding: 0 1.5em 0 .5em;
+	color: hsl(200, 82%, 35%);
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 120%; /* Chrome has bg-size calculation issues with 100% font */
+}
+
+nav.breadcrumbs a:not(:first-child) {
+	margin-left: -.5em;
+}
+
+nav.breadcrumbs a:hover {
+	background: linear-gradient(45deg, hsl(200, 82%, 35%) 80%, transparent 0) top, linear-gradient(-45deg, transparent 20%, hsl(200, 82%, 35%) 0) bottom;
+	background-size: 100% 51%;
+	background-repeat: no-repeat;
+	color: hsl(200, 82%, 90%);
+}
+
+
+article footer nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+article footer nav .next {
+	background: linear-gradient(45deg, hsl(200, 82%, 35%) 80%, transparent 0) top, linear-gradient(-45deg, transparent 20%, hsl(200, 82%, 35%) 0) bottom;
+	background-size: 100% 51%;
+	background-repeat: no-repeat;
+	padding-right: 1.5em;
+	margin-right: -1.5em;
+}
+
+article footer nav .prev {
+	background: linear-gradient(-45deg, hsl(200, 82%, 35%) 80%, transparent 0) top, linear-gradient(45deg, transparent 20%, hsl(200, 82%, 35%) 0) bottom;
+	background-size: 100% 51%;
+	background-repeat: no-repeat;
+	padding-left: 2em;
+	margin-left: -2em;
+}
+article footer nav a {
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 1.1;
+	padding: .1em .5em;
+	color: hsl(200, 82%, 90%);
+}
+
+article footer nav a:visited {
+	color: hsl(200, 82%, 90%);
+}
+
+article footer span {
+	font-size: 80%;
+	text-transform: uppercase;
+}
+
