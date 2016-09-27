@@ -1,0 +1,4 @@
+---
+slug: religion
+name: religion
+---

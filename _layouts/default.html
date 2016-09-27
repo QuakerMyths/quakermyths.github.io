@@ -13,7 +13,7 @@
 			{% include navigation.markdown %}
 		</header>
 		<nav class="breadcrumbs">
-			<a href="/">Home</a> {% if page.category != null %}<a href="/categories/{{ page.category | replace:' ', '-' | downcase }}">{{ page.category }}</a> {% endif %}
+			<a href="/">Home</a> {% if page.category != null %}<a href="/category/{{ page.category | replace:' ', '-' | downcase }}">{{ page.category }}</a> {% endif %}
 		</nav>
 		<div id="wrapper">
 	    	{{ content }}

@@ -1,0 +1,4 @@
+---
+slug: clothing
+name: clothing
+---

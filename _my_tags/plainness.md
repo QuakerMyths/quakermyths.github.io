@@ -1,0 +1,4 @@
+---
+slug: plainness
+name: plainness
+---

@@ -1,0 +1,4 @@
+---
+slug: equality
+name: equality
+---

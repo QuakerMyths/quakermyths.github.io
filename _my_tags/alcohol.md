@@ -1,0 +1,4 @@
+---
+slug: alcohol
+name: alcohol
+---
