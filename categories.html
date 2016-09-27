@@ -1,0 +1,12 @@
+---
+layout: default
+title: Categories
+---
+	<main>
+		<h2>Categories</h2>
+		<ul>
+			{% for category in site.my_categories %}
+				<li><a href="/categories/{{ category.slug }}">{{ category.name }}</a></li>
+			{% endfor %}
+		</ul>
+	</main>

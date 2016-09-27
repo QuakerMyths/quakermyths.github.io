@@ -9,16 +9,16 @@
 	<section>
 		<h4>Categories</h4>
 		<ul>
-			{% for topic in site.iterable.categories %}
-				<li><a href="/categories/{{ topic.name }}">{{ topic.name }}</a></li>
+			{% for category in site.my_categories %}
+				<li><a href="/categories/{{ category.slug }}">{{ category.name }}</a></li>
 			{% endfor %}
 		</ul>
 	</section>
 	<section>
 		<h4>Tags</h4>
 		<ul>
-			{% for topic in site.iterable.tags %}
-				<li><a href="/tags/{{ topic.name | replace:' ','-' | downcase }}">{{ topic.name }}</a></li>
+			{% for tag in site.my_tags %}
+				<li><a href="/tags/{{ tag.slug }}">{{ tag.name }}</a></li>
 			{% endfor %}
 		</ul>
 	</section>

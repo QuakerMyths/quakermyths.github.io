@@ -4,14 +4,15 @@ layout: default
 
 {% capture page_subtitle %}Articles by category{% endcapture %}
 
-<h1>{{page.name}}</h1>
-
-<div class="text-justify">
+<main>
+<header>
+<h2>{{page.name}}</h2>
+</header>
   {% if site.categories[page.slug] %}
     {% for post in site.categories[page.slug] %}
       {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% if forloop.first %}
-        <h3 class="m-t-3 m-b-1">{{ post_year }}</h3>
+	  <!--<h3 class="m-t-3 m-b-1">{{ post_year }}</h3>-->
         <div class="list-group">
       {% endif %}
       {% unless forloop.first %}
@@ -33,4 +34,4 @@ layout: default
   {% else %}
     <p>There are no posts in this category.</p>
   {% endif %}
-</div>
+</main>
