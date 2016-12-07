@@ -5,9 +5,9 @@ category: half-truth
 tags: religion
 ---
 
-**SOMETIMES** Quakerism started as a Christian denomination. The name "Religious Society of Friends" comes from Jesus saying to the Apostles "I have called you friends" (John 15:15).  Most Quakers around the world are Christian, and most would tell you that Jesus is the Word (John 1:14). Conservative Friends would say that they are "Christ-centric". 
+**USUALLY** Quakerism started as a Christian denomination. The name "Religious Society of Friends" comes from Jesus saying to the Apostles "I have called you friends" (John 15:15).  Most Quakers around the world are Christian, and most would tell you that Jesus is the Word (John 1:14). Conservative Friends would say that they are "Christ-centric". 
 
-There is, however, a subset of Liberal Friends who regard Jesus as an enlightened teacher or rabbi whose example should be followed rather than a saviour or deity.
+There is, however, a subset of Liberal Friends who regard Jesus as an enlightened teacher whose example should be followed rather than a saviour or deity.
 
 Depending on whether you define a Christian as someone who believes in atonement through Jesus' death or as someone who follows Jesus' teachings, varying numbers of Quakers would meet your definition.
 
