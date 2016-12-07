@@ -10,7 +10,7 @@
 		<h4>Categories</h4>
 		<ul>
 			{% for category in site.my_categories %}
-				<li><a href="/categories/{{ category.slug }}">{{ category.name }}</a></li>
+				<li><a href="/category/{{ category.slug }}">{{ category.name }}</a></li>
 			{% endfor %}
 		</ul>
 	</section>
@@ -18,7 +18,7 @@
 		<h4>Tags</h4>
 		<ul>
 			{% for tag in site.my_tags %}
-				<li><a href="/tags/{{ tag.slug }}">{{ tag.name }}</a></li>
+				<li><a href="/tag/{{ tag.slug }}">{{ tag.name }}</a></li>
 			{% endfor %}
 		</ul>
 	</section>
